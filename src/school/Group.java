@@ -1,4 +1,4 @@
 package school;
 
-public class Group {
+class Group {
 }

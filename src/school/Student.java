@@ -1,4 +1,4 @@
 package school;
 
-public class Student {
+class Student {
 }
