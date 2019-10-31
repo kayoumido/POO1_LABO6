@@ -1,6 +1,6 @@
 package school;
 
-class Lesson {
+public class Lesson {
 
     private Teacher teacher;
     private String subject;
