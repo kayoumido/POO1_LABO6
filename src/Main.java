@@ -1,8 +1,6 @@
-import school.Group;
-import school.Student;
-import school.Teacher;
-import school.Lesson;
+import school.*;
 
+import java.util.Arrays;
 
 public class Main {
 
@@ -22,6 +20,19 @@ public class Main {
 
         Lesson poo1 = new Lesson(pier, "POO1", 2, 3, 90, "G02");
         Lesson pls  = new Lesson(marc, "PLP", 3, 3, 135, "H01");
+
+        il61.definirLecon(poo1,pls);
+        ts61.definirLecon(poo1);
+
+        Person[] persons = {pier, marc, john, paul, ringo, george, roger, david};
+
+        System.out.println("-- Membres de l'école --");
+        for(Person p : persons){
+            System.out.println(p);
+        }
+
+        System.out.println("\n"+il61.horaire());
+
 
     }
 }

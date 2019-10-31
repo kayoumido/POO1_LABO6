@@ -13,6 +13,7 @@ public class Lesson {
     public Lesson(Teacher teacher, String subject, int weekDay, int periodBeginning, int duration, String classroom) {
         this(subject, weekDay, periodBeginning, duration, classroom);
         this.teacher = teacher;
+        this.teacher.setLesson(this);
     }
 
     private Lesson(String subject, int weekDay, int periodBeginning, int duration, String classroom) {

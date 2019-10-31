@@ -42,6 +42,6 @@ public class Group {
     }
 
     public String horaire(){
-        return "";
+        return "-- Horaire du groupe " + name() + " (" + nombreEtudiants() + " etudiants)";
     }
 }
