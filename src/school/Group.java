@@ -8,6 +8,7 @@ public class Group {
     private String orientation;
     private int trimester;
     private ArrayList<Student> students;
+    private ArrayList<Lesson> lessons;
 
 
     public Group(int numero, String orientation, int trimester, ArrayList<Student> students){
@@ -20,6 +21,10 @@ public class Group {
         this.orientation = orientation;
         this.trimester = trimester;
         this.students = students;
+
+        for(Student s : this.students){
+            s.setGroup(this);
+        }
     }
 
 
@@ -31,8 +36,8 @@ public class Group {
         return students.size();
     }
 
-    public void definirLecon() {
-
+    public void definirLecon(ArrayList<Lesson> lessons) {
+        this.lessons = lessons;
     }
 
     public String horaire(){
